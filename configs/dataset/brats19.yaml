@@ -1,0 +1,5 @@
+name: brats19
+train_csv_path: /path/to/data/brain_processed/brats19/train.csv
+val_csv_path: /path/to/data/brain_processed/brats19/val.csv
+test_csv_path: /path/to/data/brain_processed/brats19/test.csv
+image_folder: /path/to/data/brain_processed/brats19/h5

@@ -1,0 +1,26 @@
+data:
+  raw_root: /path/to/data/brain/brats19/MICCAI_BraTS_2019_Data_Training
+
+  name_mapping_csv: /path/to/data/brain/brats19/MICCAI_BraTS_2019_Data_Training/name_mapping.csv
+
+  preproc_root: /path/to/data/brain_processed/brats19
+
+  modalities: [flair, t1, t1ce, t2]
+
+  label_remap:
+    0: 0
+    1: 1
+    2: 2
+    4: 3
+
+  target_shape: [160, 160, 160]
+
+  z_clip: 5.0
+
+  to_01: true
+
+  split_ratio: [0.7, 0.15, 0.15]
+
+  split_seed: 42
+
+  run_preprocess: false

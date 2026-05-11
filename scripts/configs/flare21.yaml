@@ -1,0 +1,23 @@
+data:
+
+  img_root: /path/to/data/brain_processed/flare21/TrainingImg
+  mask_root: /path/to/data/brain_processed/flare21/TrainingMask
+  preproc_root: /path/to/data/brain_processed/flare21
+
+  label_remap:
+    0: 0  # background
+    1: 1  # liver
+    2: 2  # kidney
+    3: 3  # spleen
+    4: 4  # pancreas
+
+  resample_mode: shape
+  target_shape: [160, 160, 160]
+  norm_mode: nnunet
+  z_clip: 5.0
+  window_center: 50.0
+  window_width: 400.0
+  to_01: true
+  split_ratio: [0.7, 0.15, 0.15]
+  split_seed: 42
+  run_preprocess: true

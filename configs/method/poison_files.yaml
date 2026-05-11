@@ -1,0 +1,26 @@
+# @package _global_
+
+training:
+  data:
+    transforms:
+      forbid_geom_aug: true
+      normalize: false # poisoned dataset needs False on train
+      pixel_aug: true
+    poison:
+      enabled: true
+      perturb_type: classwise
+      apply_stage: before_normalize
+      # key: { type: classwise, from: index }; or key: { type: classwise, from: field, field: another_field }
+      key: { type: classwise, from: field, field: subject_id }
+      source:
+        type: shards
+        manifest_path: /path/to/noise/epoch_0099/manifest.json
+      defense:
+        type: null
+        sigma: 1.0              
+        kernel_size: 0          
+        gamma_range: [0.7, 1.5] 
+        scale: 0.5              
+        rotation_range: 15.0    
+        scale_range: [0.85, 1.25] 
+        prob: 0.5               

@@ -1,0 +1,7 @@
+defaults:
+  - /_global_patches: flare21_seg 
+  - _base
+
+name: flare21_seg
+save_dir: /path/to/data/project/3d_ue/outputs/flare21_seg
+eval_strategy: flare21_seg

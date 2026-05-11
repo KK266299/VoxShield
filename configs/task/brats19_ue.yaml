@@ -1,0 +1,6 @@
+defaults:
+  - /_global_patches: brats19_ue 
+  - _base
+
+name: brats19_ue
+save_dir: /path/to/data/project/3d_ue/outputs/brats19_ue

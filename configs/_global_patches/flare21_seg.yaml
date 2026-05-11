@@ -1,0 +1,41 @@
+# @package _global_
+# merge this file to global config
+
+dataset:
+  task: seg
+
+model:
+  in_channels: 1
+  num_classes: 5
+  spatial_dims: 3
+  channels: [32, 64, 128, 256, 512]
+  strides: [2, 2, 2, 2]
+  num_res_units: 2
+  norm: "INSTANCE"
+  act: "RELU"
+  dropout: 0.0
+
+training:
+  data:
+    transforms:
+      normalize: true
+      geom_aug: false
+      intensity_aug: false
+      image_size: [1, 160, 160, 160]
+      mean: [0.0]
+      std:  [1.0]
+
+  criterion:
+    include_background: false
+    lambda_dice: 1.0
+    lambda_ce: 1.0
+    ce_weight: [0.1, 1.0, 1.0, 2.0, 3.0]
+
+evaluation:
+  per_class: true
+  class_names:
+    - background
+    - liver
+    - kidney
+    - spleen
+    - pancreas

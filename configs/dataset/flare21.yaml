@@ -1,0 +1,5 @@
+name: flare21
+train_csv_path: /path/to/data/brain_processed/flare21/train.csv
+val_csv_path: /path/to/data/brain_processed/flare21/val.csv
+test_csv_path: /path/to/data/brain_processed/flare21/test.csv
+image_folder: /path/to/data/brain_processed/flare21/h5

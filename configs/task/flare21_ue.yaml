@@ -1,0 +1,6 @@
+defaults:
+  - /_global_patches: flare21_ue 
+  - _base
+
+name: flare21_ue
+save_dir: /path/to/data/project/3d_ue/outputs/flare21_ue
