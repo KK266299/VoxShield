@@ -152,7 +152,7 @@ See `requirements.txt` for the full dependency list.
 ## Citation
 
 If you use this project, please cite the corresponding work.
-'''
+```
 @misc{liu2026voxshieldprotecting3dmedical,
       title={VoxShield: Protecting 3D Medical Datasets from Unauthorized Training via Frequency-Aware Inter-Slice Disruption}, 
       author={Xinyao Liu and Zhipeng Deng and Wenhan Jiang and Haolin Wang and Xun Lin and Yafei Ou and Yefeng Zheng},
@@ -162,4 +162,4 @@ If you use this project, please cite the corresponding work.
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2605.17345}, 
 }
-'''
+```
